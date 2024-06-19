@@ -68,7 +68,7 @@ class Discrimintor(nn.Module):
 
 
 class GAN(nn.Module):
-    def __init__(self, lr=0.00008,latent_dim = 100,*args, **kwargs) -> None:
+    def __init__(self, lr=0.000076,latent_dim = 100,*args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
         self.generator = Generator(latent_dim)
         self.discriminator = Discrimintor()
